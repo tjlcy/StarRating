@@ -1,0 +1,42 @@
+/* 清除浏览器内置的边距，以防干扰 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 星星 */
+
+.myRating .myRating-item {
+    /* 不占满整行可以设置宽高 */
+    display: inline-block;
+    /* 图片大小 */
+    width: 24px;
+    /* 多写一点以增加星星间的边距 */
+    height: 20px;
+    /* 图 */
+    background-image: url(./img/star.png);
+    /* width数值多写太多会出现重复，需要通过设置不重复去掉因为宽度制造出的不完整的重复的部分 */
+    background-repeat: no-repeat;
+    /* 调节位置使图片星星展现在正中心 */
+    background-position: 2.5px top;
+    /* 垂直方向对齐 */
+    vertical-align: bottom;
+    /* 让图片和文本对齐 */
+}
+
+
+/* 评分之后的星星样式 */
+
+.myRating .item-complete {
+    background-position-y: -27px;
+}
+
+
+/* 描述信息 */
+
+.myRating .myRating-message {
+    /* 让星星和描述信息间有一点间距 */
+    margin-left: 6px;
+}

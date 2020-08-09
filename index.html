@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评分插件</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+</body>
+<script src="./index.js"></script>
+<script>
+    var demo1 = document.getElementById("demo1");
+    var demo2 = document.getElementById("demo2")
+    demo1.insertStarRating({
+        max: 5,
+        score: 2,
+        message: ['极差', '差', '合格', '良好', '优秀'],
+        disabled: false
+    });
+    demo2.insertStarRating({
+        max: 5,
+        score: 3,
+        message: ['极差', '差', '合格', '良好', '优秀'],
+        disabled: false
+    });
+</script>
+
+</html>
